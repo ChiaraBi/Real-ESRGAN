@@ -40,8 +40,8 @@ datasets:
   train:
     name: DF2K+OST
     type: PairedImageDataset
-    dataroot_gt: datasets/130m/30/
-    dataroot_lq: datasets/520m/30/
+    dataroot_gt: datasets/train/32x32/130m/
+    dataroot_lq: datasets/train/32x32/520m/
     meta_info: datasets/meta_info/meta_info.txt
     io_backend:
       type: disk
@@ -79,8 +79,8 @@ datasets:
   val:
     name: validation
     type: PairedImageDataset
-    dataroot_gt: datasets/130m/
-    dataroot_lq: datasets/520m/
+    dataroot_gt: datasets/val/32x32/130m/
+    dataroot_lq: datasets/val/32x32/520m/
     io_backend:
       type: disk
 
