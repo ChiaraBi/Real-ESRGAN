@@ -12,20 +12,19 @@
 [![python lint](https://github.com/xinntao/Real-ESRGAN/actions/workflows/pylint.yml/badge.svg)](https://github.com/xinntao/Real-ESRGAN/blob/master/.github/workflows/pylint.yml)
 [![Publish-pip](https://github.com/xinntao/Real-ESRGAN/actions/workflows/publish-pip.yml/badge.svg)](https://github.com/xinntao/Real-ESRGAN/blob/master/.github/workflows/publish-pip.yml)
 
-:fire: :fire: :fire: Add **small video models** for anime videos (**针对动漫视频的小模型**). Please see [anime video models](docs/anime_video_model.md).
+:fire: Update the **RealESRGAN AnimeVideo-v3** model **更新动漫视频的小模型**. Please see [[anime video models](docs/anime_video_model.md)] and [[comparisons](docs/anime_comparisons.md)] for more details.
 
-1. [Colab Demo](https://colab.research.google.com/drive/1k2Zod6kSHEvraybHl50Lys0LerhyTMCo?usp=sharing) for Real-ESRGAN <a href="https://colab.research.google.com/drive/1k2Zod6kSHEvraybHl50Lys0LerhyTMCo?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="google colab logo"></a>.
-2. [Colab Demo](https://colab.research.google.com/drive/1yNl9ORUxxlL4N0keJa2SEPB61imPQd1B?usp=sharing) for Real-ESRGAN (**anime videos**) <a href="https://colab.research.google.com/drive/1yNl9ORUxxlL4N0keJa2SEPB61imPQd1B?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="google colab logo"></a>.
-3. Portable [Windows](https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.3.0/realesrgan-ncnn-vulkan-20211212-windows.zip) / [Linux](https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.3.0/realesrgan-ncnn-vulkan-20211212-ubuntu.zip) / [MacOS](https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.3.0/realesrgan-ncnn-vulkan-20211212-macos.zip) **executable files for Intel/AMD/Nvidia GPU**. You can find more information [here](#Portable-executable-files). The ncnn implementation is in [Real-ESRGAN-ncnn-vulkan](https://github.com/xinntao/Real-ESRGAN-ncnn-vulkan).
+1. [Colab Demo](https://colab.research.google.com/drive/1k2Zod6kSHEvraybHl50Lys0LerhyTMCo?usp=sharing) for Real-ESRGAN | [Colab Demo](https://colab.research.google.com/drive/1yNl9ORUxxlL4N0keJa2SEPB61imPQd1B?usp=sharing) for Real-ESRGAN (**anime videos**).
+2. Portable [Windows](https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesrgan-ncnn-vulkan-20220424-windows.zip) / [Linux](https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesrgan-ncnn-vulkan-20220424-ubuntu.zip) / [MacOS](https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesrgan-ncnn-vulkan-20220424-macos.zip) **executable files for Intel/AMD/Nvidia GPU**. You can find more information [here](#Portable-executable-files). The ncnn implementation is in [Real-ESRGAN-ncnn-vulkan](https://github.com/xinntao/Real-ESRGAN-ncnn-vulkan).
 
 Real-ESRGAN aims at developing **Practical Algorithms for General Image/Video Restoration**.<br>
 We extend the powerful ESRGAN to a practical restoration application (namely, Real-ESRGAN), which is trained with pure synthetic data.
 
-:art: Real-ESRGAN needs your contributions. Any contributions are welcome, such as new features/models/typo fixes/suggestions/maintenance, *etc*. See [CONTRIBUTING.md](CONTRIBUTING.md). All contributors are list [here](README.md#hugs-acknowledgement).
+:art: Real-ESRGAN needs your contributions. Any contributions are welcome, such as new features/models/typo fixes/suggestions/maintenance, *etc*. See [CONTRIBUTING.md](docs/CONTRIBUTING.md). All contributors are list [here](README.md#hugs-acknowledgement).
 
-:question: Frequently Asked Questions can be found in [FAQ.md](FAQ.md) (Well, it is still empty there =-=||).
+:question: Frequently Asked Questions can be found in [FAQ.md](docs/FAQ.md).
 
-:milky_way: Thanks for your valuable feedbacks/suggestions. All the feedbacks are updated in [feedback.md](feedback.md).
+:milky_way: Thanks for your valuable feedbacks/suggestions. All the feedbacks are updated in [feedback.md](docs/feedback.md).
 
 ---
 
@@ -39,26 +38,27 @@ Other recommended projects:<br>
 ---
 
 <!---------------------------------- Updates --------------------------->
-<details open>
+<details>
 <summary>🚩<b>Updates</b></summary>
 
+- ✅ Update the **RealESRGAN AnimeVideo-v3** model. Please see [anime video models](docs/anime_video_model.md) and [comparisons](docs/anime_comparisons.md) for more details.
 - ✅ Add small models for anime videos. More details are in [anime video models](docs/anime_video_model.md).
 - ✅ Add the ncnn implementation [Real-ESRGAN-ncnn-vulkan](https://github.com/xinntao/Real-ESRGAN-ncnn-vulkan).
 - ✅ Add [*RealESRGAN_x4plus_anime_6B.pth*](https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.2.4/RealESRGAN_x4plus_anime_6B.pth), which is optimized for **anime** images with much smaller model size. More details and comparisons with [waifu2x](https://github.com/nihui/waifu2x-ncnn-vulkan) are in [**anime_model.md**](docs/anime_model.md)
-- ✅ Support finetuning on your own data or paired data (*i.e.*, finetuning ESRGAN). See [here](Training.md#Finetune-Real-ESRGAN-on-your-own-dataset)
+- ✅ Support finetuning on your own data or paired data (*i.e.*, finetuning ESRGAN). See [here](docs/Training.md#Finetune-Real-ESRGAN-on-your-own-dataset)
 - ✅ Integrate [GFPGAN](https://github.com/TencentARC/GFPGAN) to support **face enhancement**.
 - ✅ Integrated to [Huggingface Spaces](https://huggingface.co/spaces) with [Gradio](https://github.com/gradio-app/gradio). See [Gradio Web Demo](https://huggingface.co/spaces/akhaliq/Real-ESRGAN). Thanks [@AK391](https://github.com/AK391)
 - ✅ Support arbitrary scale with `--outscale` (It actually further resizes outputs with `LANCZOS4`). Add *RealESRGAN_x2plus.pth* model.
 - ✅ [The inference code](inference_realesrgan.py) supports: 1) **tile** options; 2) images with **alpha channel**; 3) **gray** images; 4) **16-bit** images.
-- ✅ The training codes have been released. A detailed guide can be found in [Training.md](Training.md).
+- ✅ The training codes have been released. A detailed guide can be found in [Training.md](docs/Training.md).
 
 </details>
 
 <!---------------------------------- Projects that use Real-ESRGAN --------------------------->
-<details open>
+<details>
 <summary>🧩<b>Projects that use Real-ESRGAN</b></summary>
 
-&nbsp;&nbsp;&nbsp;&nbsp;If you develop/use Real-ESRGAN in your projects, welcome to let me know 👋
+&nbsp;&nbsp;&nbsp;&nbsp;👋 If you develop/use Real-ESRGAN in your projects, welcome to let me know.
 
 - NCNN-Android: [RealSR-NCNN-Android](https://github.com/tumuyan/RealSR-NCNN-Android) by [tumuyan](https://github.com/tumuyan)
 - VapourSynth: [vs-realesrgan](https://github.com/HolyWu/vs-realesrgan) by [HolyWu](https://github.com/HolyWu)
@@ -72,12 +72,13 @@ Other recommended projects:<br>
 - [Real-ESRGAN_GUI](https://github.com/net2cn/Real-ESRGAN_GUI) by [net2cn](https://github.com/net2cn)
 - [Real-ESRGAN-EGUI](https://github.com/WGzeyu/Real-ESRGAN-EGUI) by [WGzeyu](https://github.com/WGzeyu)
 - [anime_upscaler](https://github.com/shangar21/anime_upscaler) by [shangar21](https://github.com/shangar21)
+- [RealESRGAN-GUI](https://github.com/Baiyuetribe/paper2gui/blob/main/Video%20Super%20Resolution/RealESRGAN-GUI.md) by [Baiyuetribe](https://github.com/Baiyuetribe)
 
 </details>
 
 <!---------------------------------- Demo videos --------------------------->
 <details open>
-<summary>👀<b>Demo videos</b>👀</summary>
+<summary>👀<b>Demo videos</b></summary>
 
 - [大闹天宫片段](https://www.bilibili.com/video/BV1ja41117zb)
 
@@ -118,7 +119,7 @@ If you have some images that Real-ESRGAN could not well restored, please also op
 
 ### Portable executable files
 
-You can download [Windows](https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.3.0/realesrgan-ncnn-vulkan-20211212-windows.zip) / [Linux](https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.3.0/realesrgan-ncnn-vulkan-20211212-ubuntu.zip) / [MacOS](https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.3.0/realesrgan-ncnn-vulkan-20211212-macos.zip) **executable files for Intel/AMD/Nvidia GPU**.
+You can download [Windows](https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesrgan-ncnn-vulkan-20220424-windows.zip) / [Linux](https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesrgan-ncnn-vulkan-20220424-ubuntu.zip) / [MacOS](https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesrgan-ncnn-vulkan-20220424-macos.zip) **executable files for Intel/AMD/Nvidia GPU**.
 
 This executable file is **portable** and includes all the binaries and models required. No CUDA or PyTorch environment is needed.<br>
 
@@ -133,8 +134,7 @@ We have provided five models:
 1. realesrgan-x4plus  (default)
 2. realesrnet-x4plus
 3. realesrgan-x4plus-anime (optimized for anime images, small model size)
-4. RealESRGANv2-animevideo-xsx2 (anime video, X2)
-5. RealESRGANv2-animevideo-xsx4 (anime video, X4)
+4. realesr-animevideov3 (animation video)
 
 You can use the `-n` argument for other models, for example, `./realesrgan-ncnn-vulkan.exe -i input.jpg -o output.png -n realesrnet-x4plus`
 
@@ -147,22 +147,20 @@ You can use the `-n` argument for other models, for example, `./realesrgan-ncnn-
 Usage: realesrgan-ncnn-vulkan.exe -i infile -o outfile [options]...
 
   -h                   show this help
-  -v                   verbose output
   -i input-path        input image path (jpg/png/webp) or directory
   -o output-path       output image path (jpg/png/webp) or directory
-  -s scale             upscale ratio (4, default=4)
+  -s scale             upscale ratio (can be 2, 3, 4. default=4)
   -t tile-size         tile size (>=32/0=auto, default=0) can be 0,0,0 for multi-gpu
-  -m model-path        folder path to pre-trained models(default=models)
-  -n model-name        model name (default=realesrgan-x4plus, can be realesrgan-x4plus | realesrgan-x4plus-anime | realesrnet-x4plus)
-  -g gpu-id            gpu device to use (default=0) can be 0,1,2 for multi-gpu
+  -m model-path        folder path to the pre-trained models. default=models
+  -n model-name        model name (default=realesr-animevideov3, can be realesr-animevideov3 | realesrgan-x4plus | realesrgan-x4plus-anime | realesrnet-x4plus)
+  -g gpu-id            gpu device to use (default=auto) can be 0,1,2 for multi-gpu
   -j load:proc:save    thread count for load/proc/save (default=1:2:2) can be 1:2,2,2:2 for multi-gpu
-  -x                   enable tta mode
+  -x                   enable tta mode"
   -f format            output image format (jpg/png/webp, default=ext/png)
+  -v                   verbose output
 ```
 
 Note that it may introduce block inconsistency (and also generate slightly different results from the PyTorch implementation), because this executable file first crops the input image into several tiles, and then processes them separately, finally stitches together.
-
-This executable file is based on the wonderful [Tencent/ncnn](https://github.com/Tencent/ncnn) and [realsr-ncnn-vulkan](https://github.com/nihui/realsr-ncnn-vulkan) by [nihui](https://github.com/nihui).
 
 ---
 
@@ -236,7 +234,7 @@ Results are in the `results` folder
 ```console
 Usage: python inference_realesrgan.py -n RealESRGAN_x4plus -i infile -o outfile [options]...
 
-A common command: python inference_realesrgan.py -n RealESRGAN_x4plus -i infile --outscale 3.5 --half --face_enhance
+A common command: python inference_realesrgan.py -n RealESRGAN_x4plus -i infile --outscale 3.5 --face_enhance
 
   -h                   show this help
   -i --input           Input image or folder. Default: inputs
@@ -246,10 +244,9 @@ A common command: python inference_realesrgan.py -n RealESRGAN_x4plus -i infile 
   --suffix             Suffix of the restored image. Default: out
   -t, --tile           Tile size, 0 for no tile during testing. Default: 0
   --face_enhance       Whether to use GFPGAN to enhance face. Default: False
-  --half               Whether to use half precision during inference. Default: False
+  --fp32               Use fp32 precision during inference. Default: fp16 (half precision).
   --ext                Image extension. Options: auto | jpg | png, auto means using the same extension as inputs. Default: auto
 ```
-
 
 ## :european_castle: Model Zoo
 
@@ -257,7 +254,7 @@ Please see [docs/model_zoo.md](docs/model_zoo.md)
 
 ## :computer: Training and Finetuning on your own dataset
 
-A detailed guide can be found in [Training.md](Training.md).
+A detailed guide can be found in [Training.md](docs/Training.md).
 
 ## BibTeX
 
@@ -279,3 +276,4 @@ Thanks for all the contributors.
 - [AK391](https://github.com/AK391): Integrate RealESRGAN to [Huggingface Spaces](https://huggingface.co/spaces) with [Gradio](https://github.com/gradio-app/gradio). See [Gradio Web Demo](https://huggingface.co/spaces/akhaliq/Real-ESRGAN).
 - [Asiimoviet](https://github.com/Asiimoviet): Translate the README.md to Chinese (中文).
 - [2ji3150](https://github.com/2ji3150): Thanks for the [detailed and valuable feedbacks/suggestions](https://github.com/xinntao/Real-ESRGAN/issues/131).
+- [Jared-02](https://github.com/Jared-02): Translate the Training.md to Chinese (中文).
