@@ -40,8 +40,8 @@ datasets:
   train:
     name: DF2K+OST
     type: PairedImageDataset
-    dataroot_gt: /mnt/data_one/chiara/datasets/2018-Sept-Oct-Nov/train/128x128/130m/
-    dataroot_lq: /mnt/data_one/chiara/datasets/2018-Sept-Oct-Nov/train/128x128/520m/
+    dataroot_gt: /mnt/data_one/chiara/datasets/2018-Sept-Oct-Nov/train/128x128/125m/
+    dataroot_lq: /mnt/data_one/chiara/datasets/2018-Sept-Oct-Nov/train/128x128/500m/
     meta_info: /mnt/data_one/chiara/datasets/2018-Sept-Oct-Nov/train/128x128/meta_info/meta_info.txt
     io_backend:
       type: disk
