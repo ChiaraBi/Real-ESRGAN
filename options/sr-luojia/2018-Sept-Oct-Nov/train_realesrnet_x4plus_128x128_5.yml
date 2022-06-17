@@ -1,5 +1,5 @@
 # general settings
-name: train_RealESRNetx4_64x64
+name: train_RealESRNetx4_128x128_5
 model_type: RealESRNetModel
 scale: 4
 num_gpu: 1  # auto: can infer from your visible devices automatically. official: 4 GPUs
@@ -31,7 +31,7 @@ gt_usm: True  # USM the ground-truth
 #gray_noise_prob2: 0.4
 #jpeg_range2: [30, 95]
 
-gt_size: 256
+gt_size: 512
 queue_size: 180
 
 # dataset and data loader settings
@@ -39,9 +39,9 @@ datasets:
   train:
     name: DF2K+OST
     type: PairedImageDataset
-    dataroot_gt: /mnt/data_one/chiara/datasets/2018-Sept-Oct-Nov/train/64x64/125m/
-    dataroot_lq: /mnt/data_one/chiara/datasets/2018-Sept-Oct-Nov/train/64x64/500m/
-    meta_info: /mnt/data_one/chiara/datasets/2018-Sept-Oct-Nov/train/64x64/meta_info/meta_info.txt
+    dataroot_gt: /mnt/data_one/chiara/datasets/2018-Sept-Oct-Nov_5/train/128x128/125m/
+    dataroot_lq: /mnt/data_one/chiara/datasets/2018-Sept-Oct-Nov_5/train/128x128/500m/
+    meta_info: /mnt/data_one/chiara/datasets/2018-Sept-Oct-Nov_5/train/128x128/meta_info/meta_info.txt
     io_backend:
       type: disk
 
@@ -63,7 +63,7 @@ datasets:
 
     final_sinc_prob: 0.8
 
-    gt_size: 256
+    gt_size: 512
     use_hflip: True
     use_rot: False
 
