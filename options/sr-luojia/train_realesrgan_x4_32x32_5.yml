@@ -1,5 +1,5 @@
 # general settings
-name: train_RealESRGANx4_32x32_2
+name: train_RealESRGANx4_32x32_5
 model_type: RealESRGANModel
 scale: 4
 num_gpu: 1  # auto: can infer from your visible devices automatically. official: 4 GPUs
@@ -103,7 +103,7 @@ network_d:
 path:
   # use the pre-trained Real-ESRNet model
   # pretrain_network_g: experiments/pretrained_models/RealESRNet_x4plus.pth
-  pretrain_network_g: experiments/train_RealESRNetx4_32x32_2/models/net_g_latest.pth
+  pretrain_network_g: experiments/train_RealESRNetx4_32x32_5/models/net_g_latest.pth
   param_key_g: params_ema
   strict_load_g: true
   resume_state: ~
